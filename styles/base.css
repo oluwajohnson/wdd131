@@ -1,8 +1,17 @@
 /* Header Content Styling */
 .header{
-    height: 100px;
+    /* height: 100px; */
     background-color: #333;
     color: white;
+    font-size: 12px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+  }
+  #header2{
+    color: rgb(255, 225, 0);
+    margin-left: 2px;
   }
   
     /* Navbar styling */
