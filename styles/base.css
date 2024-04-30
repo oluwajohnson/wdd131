@@ -60,7 +60,7 @@
 
   
     .content{
-      height: 300px;
+      /* height: 300px; */
       display: flex;
       width: 100%;
       margin-top: 10px;
@@ -71,7 +71,7 @@
     .main{
       height: 100%;
       width: 70%;
-      background-color: #ddd;
+      /* background-color: #ddd; */
       margin: 5px;
       border-radius: 10px;
       border-width: 1px;
@@ -94,15 +94,46 @@
       color: white;
       font-weight: bold;
     }
-#content{
-  padding: 10px;
-}
+  #content{
+    padding: 10px;
+    display: flex;
+    width: 100%;
+  }
+
+
+  .town{
+    justify-content: center;
+    text-align: center;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    margin-left: 50px;
+    margin-right:50px;
+  }
+
+
+  .country{
+    padding: 10px;
+    display: flex;
+    width: 100%;
+  }
+  .countrydesc{
+    padding: 10px;
+    text-align: justify;
+    margin-right: 10px;
+  }
+  .countryflag{
+    padding: 10px;
+  }
+
+
+
+
 
 
    .aside{
     height: 100%;
     width: 30%;
-    background-color: #ddd;
+    /* background-color: #ddd; */
     margin: 5px;
     border-radius: 10px;
     border-width: 1px;
@@ -134,6 +165,7 @@
 
 
     .footer{
+      bottom: 0;
       height: 100px;
       background-color:#333;
       color: white;
