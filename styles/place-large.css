@@ -1,0 +1,190 @@
+
+header{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    /* height: 50px; */
+
+}
+
+.header-title{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: green;
+}
+.header-divider{
+    height: 30px;
+    background-color: green;
+}
+
+
+  .hero{
+  
+    background-image: url("../images/abuja.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 485px;
+    position: relative;
+ 
+    /* position: re; */
+    /* background-color: red;
+    justify-content:center;
+    align-items: center;
+    padding-left: 20px;
+    text-align: center;
+    padding-top: 10px; */
+  }
+
+  .sub-hero{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    /* height: 100%; */
+    position: absolute;
+    top: 200px;
+    width: 100%;
+  }
+  
+  .data{
+    /* position: relative; */
+    background-color: white;
+    width: 250px;
+    height: 220px; 
+    margin-top: 40px;
+    margin-left: 20px;
+    opacity: 0.7;
+  }
+  .data-title{
+     background-color: green;
+     padding-bottom: 5px;
+     padding-top: 5px;
+     padding-left: 40px;
+     margin-top: 20px;
+     margin-bottom: 10px;
+     margin-left: -10px;
+     font-weight: bold;
+     font-size: larger;
+     color: white;
+     width: 75%;
+
+
+  }
+  .data-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 5px;
+    /* width: 600px; */
+ 
+    
+    
+  }
+  .data1{
+    
+    text-align: right;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    font-weight: bold;
+  }
+  .data2{
+    /* justify-content: flex-end;
+    align-items: center; */
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: left;
+    /* background-color: #333; */
+    width: 50%;
+    padding-left: 4px;
+  }
+
+
+
+  
+  
+  
+  .weather{
+    /* position: relative; */
+    border-top-color: rgb(242, 182, 182);
+    /* border-top: 1px; */
+    border-top-width: 1px;
+    border-top-style: solid;
+
+    background-color: white;
+    width: 220px;
+    height: 150px; 
+    margin-top: 290px;
+    margin-right: 20px;
+    opacity: 0.7;
+  }
+  .weather-title{
+     background-color: green;
+     padding-bottom: 5px;
+     padding-top: 5px;
+     padding-left: 40px;
+     margin-top: 20px;
+     margin-bottom: 10px;
+     margin-left: -10px;
+     font-weight: bold;
+     font-size: larger;
+     color: white;
+     width: 75%;
+
+
+  }
+  .weather-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 5px;
+    /* width: 600px; */
+ 
+    
+    
+  }
+  .weather1{
+    
+    text-align: right;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    font-weight: bold;
+  }
+  .weather2{
+    /* justify-content: flex-end;
+    align-items: center; */
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: left;
+    /* background-color: #333; */
+    width: 50%;
+    padding-left: 4px;
+  }
+
+
+
+  #icon:after {
+    content: attr(data-icon);
+  }
+
+
+
+
+  
+  footer{
+    /* bottom: 0; */
+    height: 70px;
+    background-color:green;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* margin-top: 20px; */
+  }

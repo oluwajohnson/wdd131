@@ -1,0 +1,74 @@
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+
+    
+      .sub-hero{
+       
+        position: relative;
+        justify-content: center;
+        flex-direction: column;
+        top: 0px;
+      
+      }
+      .data{
+        background-color: white;
+        width: 96%;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        padding-bottom: 60px;
+        line-height: 25px;
+        margin-top: 0px;
+      }
+      .data-title{
+        background-color: white;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: xx-large;
+        color: rgb(0, 0, 0);
+        text-align: center;
+       
+     }
+      .weather{
+        background-color: white;
+        width: 96%;
+        justify-content: center;
+        opacity: 1;
+        margin-top: 0px;
+        padding-bottom: 20px;
+        line-height: 25px;
+      }
+      .weather-title{
+        background-color: white;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: xx-large;
+        color: rgb(0, 0, 0);
+        text-align: center;
+       
+     }
+
+     footer{
+        /* bottom: 0; */
+        height: 80px;
+        background-color:green;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+        padding-bottom: 25px;
+        /* margin-top: 20px; */
+      }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+   
+  }
+  
+  
+  
