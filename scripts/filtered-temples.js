@@ -89,33 +89,40 @@ function myFunction() {
    
   ];
 
+const homeLink=document.querySelector("#home");
+
+homeLink.addEventListener("click",()=>{
+  templeGallery1(temples.filter(item=> item ))
+})
+
 const oldLink=document.querySelector("#old");
 
 oldLink.addEventListener("click",()=>{
-  templeGallery(temples.filter(item=> Number.parseInt(d.getFullYear()) < 1900 ))
+  templeGallery1(temples.filter(item=> Number.parseInt(item.dedicated.slice(0,4)) < 1900 ))
 })
 
 const newLink=document.querySelector("#new");
 
 newLink.addEventListener("click",()=>{
-  templeGallery(temples.filter(item=> Number.parseInt(d.getFullYear()) > 2000 ))
+  templeGallery1(temples.filter(item=> Number.parseInt(item.dedicated.slice(0,4)) > 2000 ))
 })
 
 const largeLink=document.querySelector("#large");
 
 largeLink.addEventListener("click",()=>{
-  templeGallery(temples.filter(item=> Number.parseInt(item.area) > 90000 ))
+  templeGallery1(temples.filter(item=> Number.parseInt(item.area) > 90000 ))
 })
 
 const smallLink=document.querySelector("#small");
 
 smallLink.addEventListener("click",()=>{
-  templeGallery(temples.filter(item=> Number.parseInt(item.area) < 10000 ))
+  templeGallery1(temples.filter(item=> Number.parseInt(item.area) < 10000 ))
 })
 
 
 
-  function templeGallery(filterTemple){
+  function templeGallery1(filterTemple){
+    document.querySelector(".gallery").innerHTML=""
     filterTemple.forEach(item =>{
       let card=document.createElement("section")
       let name=document.createElement("h3")
@@ -146,6 +153,7 @@ smallLink.addEventListener("click",()=>{
     });
   }
   function templeGallery(){
+    document.querySelector(".gallery").innerHTML=""
     temples.forEach(item =>{
       let card=document.createElement("section")
       let name=document.createElement("h3")
