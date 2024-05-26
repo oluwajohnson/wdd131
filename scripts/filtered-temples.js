@@ -172,7 +172,6 @@ smallLink.addEventListener("click",()=>{
 
       document.querySelector(".gallery").appendChild(card);
 
-
     });
   }
 
