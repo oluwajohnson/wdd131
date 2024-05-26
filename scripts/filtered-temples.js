@@ -152,36 +152,3 @@ smallLink.addEventListener("click",()=>{
 
     });
   }
-  function templeGallery(){
-    document.querySelector(".gallery").innerHTML=""
-    temples.forEach(item =>{
-      let card=document.createElement("section")
-      let name=document.createElement("h3")
-      let location=document.createElement("p")
-      let dedication=document.createElement("p")
-      let area=document.createElement("p")
-      let img=document.createElement("img")
-
-
-      name.textContent=item.templeName
-      location.innerHTML=`<span class="label">Location:</span> ${item.location}`
-      dedication.innerHTML=`<span class="label">Dedicated:</span> ${item.dedicated}`
-      area.innerHTML=`<span class="label">Location:</span> ${item.area} sq ft`
-
-      img.setAttribute("src",item.imageUrl)
-      img.setAttribute("alt",`${item.templeName} Temple`)
-      img.setAttribute("loading","lazy")
-
-      card.appendChild(name);
-      card.appendChild(location);
-      card.appendChild(dedication);
-      card.appendChild(area);
-      card.appendChild(img);
-
-      document.querySelector(".gallery").appendChild(card);
-
-    });
-  }
-
-
-  templeGallery();
