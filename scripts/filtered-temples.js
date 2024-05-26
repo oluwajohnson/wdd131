@@ -4,8 +4,6 @@ document.getElementById("currentYear").innerHTML=`&copy; ${d.getFullYear()} - Og
 document.getElementById("lastModified").textContent=`Last Modification: ${document.lastModified}`;
 
 
-
-
 function myFunction() {
     var x = document.getElementById("myNavbar");
     if (x.className === "navbar") {
@@ -14,14 +12,6 @@ function myFunction() {
       x.className = "navbar";
     }
   }
-
-
-
-
-
-
-
-
 
   const temples = [
     {
@@ -99,17 +89,64 @@ function myFunction() {
    
   ];
 
+const oldLink=document.querySelector("#old");
+
+oldLink.addEventListener("click",()=>{
+  templeGallery(temples.filter(item=> Number.parseInt(d.getFullYear()) < 1900 ))
+})
+
+const newLink=document.querySelector("#new");
+
+newLink.addEventListener("click",()=>{
+  templeGallery(temples.filter(item=> Number.parseInt(d.getFullYear()) > 2000 ))
+})
+
 const largeLink=document.querySelector("#large");
 
 largeLink.addEventListener("click",()=>{
   templeGallery(temples.filter(item=> Number.parseInt(item.area) > 90000 ))
 })
 
+const smallLink=document.querySelector("#small");
+
+smallLink.addEventListener("click",()=>{
+  templeGallery(temples.filter(item=> Number.parseInt(item.area) < 10000 ))
+})
 
 
 
   function templeGallery(filterTemple){
     filterTemple.forEach(item =>{
+      let card=document.createElement("section")
+      let name=document.createElement("h3")
+      let location=document.createElement("p")
+      let dedication=document.createElement("p")
+      let area=document.createElement("p")
+      let img=document.createElement("img")
+
+
+      name.textContent=item.templeName
+      location.innerHTML=`<span class="label">Location:</span> ${item.location}`
+      dedication.innerHTML=`<span class="label">Dedicated:</span> ${item.dedicated}`
+      area.innerHTML=`<span class="label">Location:</span> ${item.area} sq ft`
+
+      img.setAttribute("src",item.imageUrl)
+      img.setAttribute("alt",`${item.templeName} Temple`)
+      img.setAttribute("loading","lazy")
+
+      card.appendChild(name);
+      card.appendChild(location);
+      card.appendChild(dedication);
+      card.appendChild(area);
+      card.appendChild(img);
+
+      document.querySelector(".gallery").appendChild(card);
+
+
+    });
+  }
+  function templeGallery(){
+    temples.forEach(item =>{
       let card=document.createElement("section")
       let name=document.createElement("h3")
       let location=document.createElement("p")
