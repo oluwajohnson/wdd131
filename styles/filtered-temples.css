@@ -45,18 +45,18 @@
     padding-top: 10px;
   }
   
-
-
   .gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    
   }
   .gallery img {
     max-width: 100%;
     height: auto;
     border: 2px solid #333;
+    
   }
 
   footer{
