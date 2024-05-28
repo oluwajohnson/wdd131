@@ -11,7 +11,6 @@ function myFunction() {
       x.className = "navbar";
     }
   }
-
   const temples = [
     {
       templeName: "Aba Nigeria",
