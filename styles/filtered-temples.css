@@ -97,6 +97,7 @@
     .topnavl a {
        
         display: none;
+
    
       }
   }
@@ -112,7 +113,7 @@
     .navbar.responsive a {
       float: none;
       display: block;
-      text-align: left;
+      text-align: center;
     }
     .topnavl.responsive a {
        
