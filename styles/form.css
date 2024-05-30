@@ -1,0 +1,149 @@
+body, html {
+    /* height: 100%; */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 1510px;
+    margin-bottom: 20px;
+}
+main{
+    background-color: rgb(192, 168, 168);
+    border-radius: 10px;
+    width: 1510px;
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    /* background-color: #b9aeae; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form input[type="date"],form input[type="submit"],form input[type="text"], form select {
+    height: 30px;
+    width: 350px;
+}
+
+form textarea{
+    width: 350px;
+    height: 300px;
+}
+
+
+.productName,.dateInstall,.writeReview,.yourName{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+}
+.overallRate{
+    padding-top: 20px;
+    width: 350px;
+}
+
+.features{
+    padding-top: 20px;
+}
+.features label{
+    display: block;
+}
+p{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.starInner {
+    /* display: flex; */
+ margin: 10px;
+   
+}
+
+.star-rating input[type="radio"] {
+    /* display: block; */
+    width: 15px;
+   
+    
+    /* display: none; */
+}
+
+
+.star-rating label {
+    color: gray;
+    cursor: pointer;
+    padding: 0 0.1em;
+   
+    
+}
+.star-rating input[type="radio"]:checked ~ label {
+    color: gold;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: gold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    /* bottom: 0; */
+    height: 70px;
+    background-color:#333;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    width: 1510px;
+    
+  }
+
+
+  @media screen and (max-width: 600px) {
+
+    body, html {
+        /* height: 100%; */
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+
+        width: 500px;
+      
+       
+    }
+
+    footer{
+
+        width:500px;
+       
+        
+      }
+  }

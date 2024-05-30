@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Ogunleye Johnson">
+    <meta description="WDD 131 - Dynamic Web Fundamentals - - Ogunleye Johnson - About Me ">
+    <title>WDD 131:Product Review Form - Ogunleye Johnson</title>
+    <link rel="stylesheet" href="./styles/form.css">
+    <script defer  src="./scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+
+            <!-- //----------Product Name----------- -->
+            <div class="productName">
+                <label for="selectItem"> Product Name 
+                </label> 
+                <select id="selectItem" required> </select>
+            </div>
+
+
+            <!-- //-----------Overall Rating--------- -->
+            <div class="overallRate">
+
+                <p>Overall Rating</p>
+                <div class="star-rating">
+                    <div class="starInner">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5" title="5 stars">&#9733;</label>
+                    </div>
+                    <div class="starInner">
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4" title="4 stars">&#9733;</label>
+                        <label for="star4" title="4 stars">&#9733;</label>
+                    </div>
+                    <div class="starInner">
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3" title="3 stars">&#9733;</label>
+                        <label for="star3" title="3 stars">&#9733;</label>
+                        <label for="star3" title="3 stars">&#9733;</label>
+                    </div>
+                    <div class="starInner">
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2" title="2 stars">&#9733;</label>
+                        <label for="star2" title="2 stars">&#9733;</label>
+                        <label for="star2" title="2 stars">&#9733;</label>
+                        <label for="star2" title="2 stars">&#9733;</label>
+                    </div>
+                    <div class="starInner">
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1" title="1 stars">&#9733;</label>
+                        <label for="star1" title="1 stars">&#9733;</label>
+                        <label for="star1" title="1 stars">&#9733;</label>
+                        <label for="star1" title="1 stars">&#9733;</label>
+                        <label for="star1" title="1 stars">&#9733;</label>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <!-- //-------------Date of Installation------------- -->
+            <div class="dateInstall">
+                <label for="date">
+                    Date of Installation
+                </label>
+                <input type="date" id="date" name="date" required>
+
+               
+            </div>
+
+            <!-- //------------Useful Features------------------ -->
+            <div class="features">
+                <p>Which features did you find useful in the product?</p>
+                <p>(Check all that apply)</p>
+                <label>
+                    <input type="checkbox" id="checkbox" name="checkbox" value="Durability" >
+                    Durability
+                </label>
+                <label>
+                    <input type="checkbox" id="checkbox" name="checkbox" value="Ease of Use" >
+                    Ease of Use
+                </label>
+                <label>
+                    <input type="checkbox" id="checkbox" name="checkbox" value="Performance" >
+                    Performance
+                </label>
+                <label>
+                    <input type="checkbox" id="checkbox" name="checkbox" value="Design" >
+                    Design
+                </label>
+            </div>
+
+            <!-- //---------------Written Review-------------------- -->
+            <div class="writeReview">
+                <label for="review">Written Review (Optional)</label>
+                <textarea id="review" name="review"></textarea>
+            </div>
+            <!-- //---------------Your Name-------------------- -->
+            <div class="yourName">
+                <label for="name">Your Name (Optional)</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <!-- //---------------Form Submission Button-------------------- -->
+            <div class="yourName">
+                
+                <input type="submit" id="name" value="Post Review">
+            </div>
+
+            
+        </form>
+        
+        
+
+    </main>
+    <footer>
+        <p>
+            <div id="currentYear">
+
+            </div>
+        </p>
+        <div  id="lastModified" >
+        </div>
+   </footer>
+   <script defer  src="./scripts/form.js"></script>
+</body>
+</html>
