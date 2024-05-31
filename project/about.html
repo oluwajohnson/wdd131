@@ -5,33 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="Ogunleye Johnson">
     <meta description="WDD 131 - Dynamic Web Fundamentals - - Ogunleye Johnson - About Me ">
-    <title>WDD 131:Book Shop - Ogunleye Johnson</title>
-    <link rel="stylesheet" href="./styles/book-large.css">
-    <!-- <link rel="stylesheet" href="./styles/book.css"> -->
-    <script src="./scripts/book.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>WDD 131:Archiver- About Us - Ogunleye Johnson</title>
+    <link rel="stylesheet" href="./styles/book.css">
+    <script defer  src="./scripts/book.js"></script>
 </head>
 <body>
     <header class="header">
-        <a href="index.html" class="logo">CSS Nav</a>
+        <a href="index.html" id="home" class="logo">Archiver</a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" id="home">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="faqs.html">Faqs</a></li>
         </ul>
       </header>
-    <main>
-
-    </main>
+      <main>
+          <div class="about-main">
+            <div class="aboutMission">
+              <h1>Our Mission</h1>
+              <p>At Archiver, our mission is to protect and preserve the written word. We aim to offer state-of-the-art archiving solutions that maintain the integrity and accessibility of books and manuscripts for future generations.</p>
+            </div>
+            <div class="aboutVision">
+              <h1>Our Vision</h1>
+              <p>We envision a future where every book, no matter how old or rare, is preserved and accessible. Our goal is to become the world’s most trusted name in book archiving by leveraging advanced technologies and adhering to the highest standards of preservation.</p>
+            </div>
+          </div>
+          <div class="offer">
+            <h1>Services Offered</h1>
+            <div class="offersub">
+              <div>
+                <h3>Climate-Controlled Storage</h3>
+                <p>Our state-of-the-art facilities provide climate-controlled environments that protect books from environmental damage. This includes regulating temperature, humidity, and light exposure to prevent deterioration.</p>
+              </div>
+              <div>
+                <h3>Conservation and Restoration</h3>
+                <p>Our team of skilled conservators specializes in the restoration of damaged books and manuscripts. We use gentle, non-invasive techniques to repair and stabilize items, prolonging their lifespan while preserving their historical value.</p>
+                </div>
+              <div>
+                <h3>Secure Digital Storage</h3>
+                <p>We offer secure digital storage solutions that protect digital copies from unauthorized access and data loss. Our digital archives are backed up regularly and stored in secure, redundant systems.</p>
+              </div>
+            </div>
+          </div>
+      </main>
     <footer>
         <p>
-            ©<span id="currentyear"></span> <script>myFunction1()</script> - Ogunleye Johnson, Nigeria
+            <div id="currentYear">
+
+            </div>
         </p>
-        <div>
-            Last Modification: <script>myFunction()</script> 
+        <div  id="lastModified" >
         </div>
-    </footer>
+   </footer>
+   <script defer  src="./scripts/book.js"></script>
 </body>
 </html>

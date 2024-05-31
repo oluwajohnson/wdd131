@@ -7,22 +7,53 @@
     <meta description="WDD 131 - Dynamic Web Fundamentals - - Ogunleye Johnson - About Me ">
     <title>WDD 131:Book Shop - Ogunleye Johnson</title>
     <link rel="stylesheet" href="./styles/book.css">
-    <script   src="./scripts/book.js"></script>
+    <script defer  src="./scripts/book.js"></script>
 </head>
 <body>
     <header class="header">
-        <a href="index.html" class="logo">Book Keeper</a>
+        <a href="index.html" id="home" class="logo">Archiver</a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" id="home">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="faqs.html">Faqs</a></li>
         </ul>
       </header>
-    <main>
+      <main>
+        <div class="mainHero">
+          <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg" loading="lazy"/>
+          <div class="hero">
+            <h1>Welcome to Archiver</h1>
+            <h2>Your Premier Book Archiving Company</h2>
+          </div>
+          <div class="hero2">
+            <div class="hero3">
+              <h3>Are you a writer or an author?</h3>
+              <a href="contact.html" id="home"><h3 class="herobtn">Start here</h3></a>
+            </div>
+            <div class="hero3">
+              <h3>Do you want to keep your books from lose?</h3>
+              <a href="contact.html" id="home"><h3 class="herobtn">You are covered</h3></a>
+            </div>
+          </div>
+        </div>
+        <div class="mainintro">
+          <p>
+            In an age where digital transformation is sweeping across industries, the importance of preserving printed works remains paramount. Archiva is a leading book archiving company dedicated to safeguarding the legacy of printed literature through meticulous archiving, digitization, and preservation services. Our mission is to provide comprehensive solutions that ensure the longevity and accessibility of books, manuscripts, and other valuable printed materials. This document outlines our company’s offerings, values, methodologies, and the unique benefits we provide to our clients.
+          </p>
+          <p class="ceo">
+            ----Ogunleye Johnson - MD/CEO
+          </p>
 
-    </main>
+        </div>
+        <div class="submain">
+          <h1>Here are our Trusted Partners</h1>
+          <div class="gallery">
+          </div>
+        </div>
+      </main>
     <footer>
         <p>
             <div id="currentYear">
@@ -32,6 +63,6 @@
         <div  id="lastModified" >
         </div>
    </footer>
-   <script  src="./scripts/book.js"></script>
+   <script defer  src="./scripts/book.js"></script>
 </body>
 </html>
