@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" aria-labelledby="title">
+<title id="title">Laptop displaying web development code</title>
+<rect width="360" height="240" rx="16" fill="#e8f0f4"/>
+<rect x="65" y="32" width="230" height="150" rx="10" fill="#263746"/>
+<rect x="77" y="44" width="206" height="126" rx="4" fill="#ffffff"/>
+<rect x="77" y="44" width="206" height="22" fill="#d9e5ec"/>
+<circle cx="91" cy="55" r="4" fill="#d46a5e"/>
+<circle cx="105" cy="55" r="4" fill="#e4b64f"/>
+<circle cx="119" cy="55" r="4" fill="#65a77b"/>
+<g font-family="monospace" font-size="15" font-weight="bold">
+<text x="96" y="91" fill="#206a8a">&lt;html&gt;</text>
+<text x="112" y="116" fill="#9a4d00">&lt;h1&gt;Hello!&lt;/h1&gt;</text>
+<text x="96" y="141" fill="#206a8a">&lt;/html&gt;</text>
+</g>
+<path d="M45 185h270l24 23H21z" fill="#52616b"/>
+<rect x="145" y="187" width="70" height="5" rx="2" fill="#d9e5ec"/>
+</svg>
