@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title">
+<title id="title">Decorative placeholder illustration of a temple</title>
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#78a9d4"/><stop offset="1" stop-color="#e5eff7"/></linearGradient><linearGradient id="stone" x2="0" y2="1"><stop stop-color="#fffef7"/><stop offset="1" stop-color="#c9c9c1"/></linearGradient></defs>
+<rect width="900" height="600" fill="url(#sky)"/><path d="M0 420 Q180 350 330 420 T650 410 T900 420 V600 H0Z" fill="#456b48"/>
+<g fill="#315b3c"><circle cx="90" cy="390" r="100"/><circle cx="800" cy="390" r="125"/><circle cx="700" cy="440" r="70"/></g>
+<g fill="url(#stone)" stroke="#a6a79f" stroke-width="5"><path d="M235 420 L270 250 L305 420Z"/><path d="M595 420 L630 210 L665 420Z"/><path d="M180 420 H720 V520 H180Z"/><path d="M220 420 L450 315 L680 420Z"/><path d="M340 420 V365 H560 V420Z"/><path d="M260 250 L270 95 L280 250Z"/><path d="M620 210 L630 35 L640 210Z"/></g>
+<g fill="#f4c95d"><path d="M265 95h10l-5-35z"/><path d="M625 35h10l-5-35z"/></g><g stroke="#9b9c95" stroke-width="4" fill="none"><path d="M380 520V430h140v90M410 520V450h80v70"/><path d="M300 450h40v70h-40zM560 450h40v70h-40z"/></g><rect y="520" width="900" height="80" fill="#345d3d"/>
+</svg>
