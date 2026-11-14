@@ -44,12 +44,18 @@ body {
   outline-offset: 3px;
 }
 .navigation {
-  display: none;
-  flex-direction: column;
-  width: 100%;
-  padding-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: .5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
 }
-.navigation.open { display: flex; }
+
+.navigation.open {
+    max-height: 20rem;
+}
 .navigation a {
   display: block;
   padding: .7rem 1rem;
