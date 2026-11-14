@@ -43,7 +43,7 @@ body {
   outline: 3px solid var(--accent);
   outline-offset: 3px;
 }
-.navigation {
+nav {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -53,7 +53,7 @@ body {
     transition: max-height 0.3s ease;
 }
 
-.navigation.open {
+nav.open {
     max-height: 20rem;
 }
 .navigation a {
