@@ -1,0 +1,147 @@
+/* Mobile-first Temple Album styles */
+:root {
+  --purple: #42106b;
+  --purple-dark: #2d084b;
+  --accent: #f4c95d;
+  --text: #222831;
+  --page: #f7f7fa;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--text);
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: .8rem 1rem;
+  background: var(--purple);
+  color: white;
+}
+.site-title {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.55rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu-button {
+  border: 0;
+  padding: .2rem .5rem;
+  background: transparent;
+  color: white;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.menu-button:focus-visible, .navigation a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+.navigation {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  padding-top: .5rem;
+}
+.navigation.open { display: flex; }
+.navigation a {
+  display: block;
+  padding: .7rem 1rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.05rem;
+  border-radius: 4px;
+}
+.navigation a:hover, .navigation a:focus-visible {
+  background: var(--accent);
+  color: var(--purple-dark);
+}
+main {
+  width: min(1100px, 94%);
+  margin: 1.5rem auto 3rem;
+}
+h1 {
+  margin: 0 0 1rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+figure {
+  margin: 0;
+  padding: .5rem;
+  background: white;
+  text-align: center;
+}
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  background: #e9e6ef;
+}
+figcaption {
+  padding: .4rem .2rem .1rem;
+  color: var(--purple);
+  font-size: .95rem;
+}
+footer {
+  padding: 1rem;
+  background: var(--purple);
+  color: white;
+  text-align: center;
+}
+footer p { margin: .2rem 0; }
+#lastModified { font-size: .8rem; }
+
+/* Dynamically generated temple cards */
+.temple-card {
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ded9e5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(45 8 75 / 8%);
+  text-align: center;
+}
+.temple-card h2 {
+  margin: 0 0 .75rem;
+  color: var(--purple);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+.temple-card p {
+  margin: .35rem 0;
+  font-size: .92rem;
+}
+.temple-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8 / 5;
+  object-fit: cover;
+  margin-top: .9rem;
+  background: #e9e6ef;
+}
+.navigation a.active {
+  background: var(--accent);
+  color: var(--purple-dark);
+  font-weight: 700;
+}
+.empty-message {
+  grid-column: 1 / -1;
+  padding: 2rem;
+  text-align: center;
+}
